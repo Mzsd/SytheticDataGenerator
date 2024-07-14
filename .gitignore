@@ -1,0 +1,4 @@
+.env
+/Testing/.env
+data
+/__pycache__/
