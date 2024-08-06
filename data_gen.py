@@ -29,7 +29,7 @@ def load_data():
 
 def start_api_caller():
     pizza_df, orders_per_hour_weekday = load_data()
-    api_caller = APICaller(pizza_df)
+    api_caller = APICaller(pizza_df, pd.read_csv("postcode_latlong.csv"))
 
     total_processes = 16
     
